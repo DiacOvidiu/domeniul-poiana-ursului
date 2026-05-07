@@ -29,6 +29,33 @@ export default defineConfig({
     sourcemap: false,
     reportCompressedSize: false,
     chunkSizeWarningLimit: 1000,
+    modulePreload: {
+      polyfill: false,
+      resolveDependencies: (filename, deps) => {
+        // Eager-preload only critical deps for the entry chunk.
+        // Strip lazy chunks (BelowFold, motion-vendor, not-found, en) so they
+        // load on demand instead of competing with the LCP image.
+        const lazyChunks = [
+          "motion-vendor",
+          "BelowFold",
+          "not-found",
+          "/en-",
+          "About",
+          "Rooms",
+          "Facilities",
+          "Pricing",
+          "Distances",
+          "Reviews",
+          "FAQ",
+          "Contact",
+          "Footer",
+          "WhatsAppButton",
+        ];
+        return deps.filter(
+          (dep) => !lazyChunks.some((chunk) => dep.includes(chunk)),
+        );
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: {

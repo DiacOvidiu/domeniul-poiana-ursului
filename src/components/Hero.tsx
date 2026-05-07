@@ -1,28 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronDown, Star, MapPin, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const HERO_BASE =
-  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4";
-const HERO_AVIF_SRCSET = [
-  `${HERO_BASE}?w=600&q=55&fm=avif 600w`,
-  `${HERO_BASE}?w=900&q=55&fm=avif 900w`,
-  `${HERO_BASE}?w=1280&q=58&fm=avif 1280w`,
-  `${HERO_BASE}?w=1600&q=60&fm=avif 1600w`,
-  `${HERO_BASE}?w=1920&q=62&fm=avif 1920w`,
-].join(", ");
-const HERO_WEBP_SRCSET = [
-  `${HERO_BASE}?w=600&q=65&fm=webp 600w`,
-  `${HERO_BASE}?w=900&q=65&fm=webp 900w`,
-  `${HERO_BASE}?w=1280&q=68&fm=webp 1280w`,
-  `${HERO_BASE}?w=1600&q=70&fm=webp 1600w`,
-  `${HERO_BASE}?w=1920&q=72&fm=webp 1920w`,
-].join(", ");
-const HERO_FALLBACK = `${HERO_BASE}?w=1280&q=68&fm=webp`;
-
 export default function Hero() {
   const { t } = useLanguage();
-  const parallaxRef = useRef<HTMLDivElement>(null);
   const [parallaxEnabled, setParallaxEnabled] = useState(false);
 
   useEffect(() => {
@@ -37,16 +18,16 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
+    const el = document.getElementById("hero-static");
+    if (!el) return;
     if (!parallaxEnabled) {
-      if (parallaxRef.current) parallaxRef.current.style.transform = "";
+      el.style.transform = "";
       return;
     }
     let raf = 0;
     let pending = false;
     const apply = () => {
       pending = false;
-      const el = parallaxRef.current;
-      if (!el) return;
       const y = window.scrollY * 0.35;
       el.style.transform = `translate3d(0, ${y}px, 0)`;
     };
@@ -69,25 +50,7 @@ export default function Hero() {
       aria-label="Hero - Domeniul Poiana Ursului"
       data-testid="hero-section"
     >
-      <div
-        ref={parallaxRef}
-        className="absolute inset-0 hero-bg pointer-events-none"
-      >
-        <picture>
-          <source type="image/avif" srcSet={HERO_AVIF_SRCSET} sizes="100vw" />
-          <source type="image/webp" srcSet={HERO_WEBP_SRCSET} sizes="100vw" />
-          <img
-            src={HERO_FALLBACK}
-            alt="Peisaj montan - Domeniul Poiana Ursului, Dumbrăveni, Sibiu"
-            width={1600}
-            height={1067}
-            fetchPriority="high"
-            decoding="async"
-            className="absolute inset-0 w-full h-full object-cover scale-110"
-          />
-        </picture>
-      </div>
-      <div className="absolute inset-0 gradient-overlay pointer-events-none" />
+      {/* Hero LCP image is rendered statically in index.html (#hero-static) for instant paint */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent pointer-events-none" />
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
 
