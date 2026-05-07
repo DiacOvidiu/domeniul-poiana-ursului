@@ -1,4 +1,4 @@
-import { TreePine, MapPin, ExternalLink, Facebook, Star } from "lucide-react";
+import { TreePine, MapPin, ExternalLink, Facebook, Star, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const navHrefs = ["#despre", "#camere", "#facilitati", "#tarife", "#locatie", "#recenzii", "#faq", "#contact"];
@@ -32,9 +32,27 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4 max-w-xs">{t.footer.description}</p>
-            <div className="flex items-start gap-2 text-xs text-muted-foreground">
-              <MapPin className="w-3.5 h-3.5 text-gold mt-0.5 shrink-0" />
-              <span className="whitespace-pre-line">{t.footer.address}</span>
+            <div className="space-y-2">
+              <div className="flex items-start gap-2 text-xs text-muted-foreground">
+                <MapPin className="w-3.5 h-3.5 text-gold mt-0.5 shrink-0" />
+                <span className="whitespace-pre-line">{t.footer.address}</span>
+              </div>
+              <a
+                href="tel:+40754775329"
+                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-gold transition-colors"
+                data-testid="footer-phone"
+              >
+                <Phone className="w-3.5 h-3.5 text-gold shrink-0" />
+                <span>0754 775 329</span>
+              </a>
+              <a
+                href="mailto:diacovidiu15@gmail.com"
+                className="flex items-center gap-2 text-xs text-muted-foreground hover:text-gold transition-colors break-all"
+                data-testid="footer-email"
+              >
+                <Mail className="w-3.5 h-3.5 text-gold shrink-0" />
+                <span>diacovidiu15@gmail.com</span>
+              </a>
             </div>
           </div>
 

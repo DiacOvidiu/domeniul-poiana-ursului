@@ -1,15 +1,18 @@
 import { useEffect, useRef, useState } from "react";
 import { m } from "framer-motion";
-import { MapPin, Clock, ExternalLink, Facebook, Globe } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const contactIcons = [MapPin, Clock, Globe, Facebook];
-const contactLinks = [
+const contactIcons = [MapPin, Phone, Mail, Clock];
+const contactLinks: (string | null)[] = [
   "https://maps.google.com/?q=Domeniul+Poiana+Ursului+Dumbraveni+Sibiu",
+  "tel:+40754775329",
+  "mailto:diacovidiu15@gmail.com",
   null,
-  "https://www.booking.com/hotel/ro/domeniul-poiana-ursului.ro.html",
-  "https://www.facebook.com/p/Domeniul-Poiana-Ursului-100063592174049/",
 ];
+// tel:/mailto: links open in same tab; only http(s) links should target=_blank
+const isExternal = (url: string | null) =>
+  !!url && (url.startsWith("http://") || url.startsWith("https://"));
 
 function useInView() {
   const ref = useRef<HTMLDivElement>(null);
@@ -85,13 +88,14 @@ export default function Contact() {
                 {link && linkLabel && (
                   <a
                     href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    {...(isExternal(link)
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : {})}
                     className="inline-flex items-center gap-1.5 text-xs text-gold hover:text-gold/80 transition-colors duration-200 font-medium"
                     data-testid={`contact-link-${i}`}
                   >
                     {linkLabel}
-                    <ExternalLink className="w-3 h-3" />
+                    {isExternal(link) && <ExternalLink className="w-3 h-3" />}
                   </a>
                 )}
               </m.div>

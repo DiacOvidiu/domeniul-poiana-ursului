@@ -3,7 +3,7 @@ import { m, AnimatePresence } from "framer-motion";
 import { MessageCircle, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const WHATSAPP_NUMBER = "40XXXXXXXXX";
+const WHATSAPP_NUMBER = "40754775329";
 
 export default function WhatsAppButton() {
   const { t } = useLanguage();

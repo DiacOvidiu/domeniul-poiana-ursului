@@ -67,36 +67,36 @@ export const ro = {
     rooms: [
       {
         name: "Cameră Dublă Superioară",
-        type: "6 camere disponibile",
+        type: "32 m² · 6 camere disponibile",
         badge: "Popular",
         description:
-          "Camere spațioase și luminoase cu vedere la lac, dotate cu TV cu ecran plat prin satelit, baie privată cu duș, halate și prosoape de baie de calitate.",
+          "Cameră spațioasă de 32 m² cu vedere la lac și grădină. Pat matrimonial confortabil și canapea extensibilă pentru un al treilea oaspete. Baie privată cu cadă și duș, halat, papuci și articole de toaletă incluse. TV cu canale prin satelit, încălzire și mochetă pentru o atmosferă caldă.",
         price: "de la 240 RON",
         priceNote: "/ noapte",
         features: [
-          "Vedere la lac",
-          "TV satelit",
-          "Baie privată",
-          "Halate & Prosoape",
-          "Sofa",
-          "Intrare privată",
+          "32 m² · vedere lac",
+          "Pat dublu mare",
+          "Canapea extensibilă",
+          "Baie cadă & duș",
+          "Halat & papuci",
+          "TV satelit & WiFi",
         ],
       },
       {
-        name: "Suite Queen cu Dormitor",
-        type: "1 apartament exclusiv",
+        name: "Suită cu 1 Dormitor",
+        type: "1 apartament · dormitor + sufragerie",
         badge: "Premium",
         description:
-          "Suite exclusivă cu intrare privată separată, compusă din living, dormitor și baie cu duș și bidet. Vedere la grădină, ciocolată pentru oaspeți.",
+          "Apartament privat cu dormitor și sufragerie separate — confort dedicat pentru sejururi mai lungi sau familii. Pat dublu mare în dormitor, canapea extensibilă în sufragerie (total 2 paturi), baie privată și WiFi gratuit. Două spații distincte pentru relaxare totală.",
         price: "de la 320 RON",
         priceNote: "/ noapte",
         features: [
-          "Living separat",
-          "Dormitor separat",
-          "Baie cu bidet",
-          "Vedere grădină",
-          "Intrare privată",
-          "Ciocolată omagiu",
+          "Dormitor + sufragerie",
+          "Pat dublu mare",
+          "Canapea extensibilă",
+          "Baie privată",
+          "2 paturi · până la 4 oaspeți",
+          "WiFi gratuit",
         ],
       },
     ],
@@ -355,22 +355,22 @@ export const ro = {
         linkLabel: "Deschide pe Hartă",
       },
       {
-        title: "Program Rezervări",
+        title: "Telefon",
+        content:
+          "0754 775 329\nDisponibil zilnic\nLun–Dum: 08:00 – 22:00",
+        linkLabel: "Sună acum",
+      },
+      {
+        title: "Email",
+        content:
+          "diacovidiu15@gmail.com\nRăspuns în maxim 24h\nÎntrebări & rezervări",
+        linkLabel: "Trimite email",
+      },
+      {
+        title: "Program",
         content:
           "Check-in: 14:00 – 23:00\nCheck-out: 11:00 – 12:00\nLun–Dum: disponibili",
         linkLabel: null,
-      },
-      {
-        title: "Rezervări Online",
-        content:
-          "Rezervați direct prin Booking.com\nDisponibilitate în timp real\nConfirmare imediată",
-        linkLabel: "Rezervă pe Booking",
-      },
-      {
-        title: "Facebook",
-        content:
-          "Urmăriți-ne pentru\nnoutăți și oferte speciale\npentru sejururi viitoare",
-        linkLabel: "Vizitați Pagina",
       },
     ],
   },
