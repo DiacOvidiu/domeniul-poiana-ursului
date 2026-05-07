@@ -46,18 +46,18 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col justify-center overflow-hidden"
+      className="relative min-h-[100svh] flex flex-col justify-end sm:justify-center overflow-hidden"
       aria-label="Hero - Domeniul Poiana Ursului"
       data-testid="hero-section"
     >
       {/* Hero LCP image is rendered statically in index.html (#hero-static) for instant paint */}
       <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/40 to-transparent pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 sm:h-32 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <div className="relative z-20 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-10 sm:pb-16">
         <div className="max-w-3xl">
           <div
-            className="flex items-center gap-2 mb-6 animate-fade-in-up"
+            className="flex flex-wrap items-center gap-2 mb-4 sm:mb-6 animate-fade-in-up"
             data-testid="hero-location"
           >
             <div className="flex items-center gap-2 glass px-3 py-1.5 rounded-full text-xs text-muted-foreground">
@@ -71,7 +71,7 @@ export default function Hero() {
           </div>
 
           <h1
-            className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground leading-none mb-6 animate-fade-in-up delay-100"
+            className="font-serif text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground leading-tight sm:leading-none mb-4 sm:mb-6 animate-fade-in-up delay-100"
             data-testid="hero-title"
           >
             {t.hero.title1}
@@ -80,14 +80,14 @@ export default function Hero() {
           </h1>
 
           <p
-            className="text-lg sm:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed animate-fade-in-up delay-200"
+            className="text-base sm:text-xl text-muted-foreground max-w-xl mb-6 sm:mb-8 leading-relaxed animate-fade-in-up delay-200"
             data-testid="hero-subtitle"
           >
             {t.hero.subtitle}
           </p>
 
           <div
-            className="flex flex-wrap gap-4 mb-10 animate-fade-in-up delay-300"
+            className="flex flex-wrap gap-3 sm:gap-4 mb-6 sm:mb-10 animate-fade-in-up delay-300"
             data-testid="hero-trust"
           >
             {[

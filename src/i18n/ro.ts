@@ -312,27 +312,27 @@ export const ro = {
     items: [
       {
         q: "Ce tip de camere se pot rezerva la Domeniul Poiana Ursului?",
-        a: "Oferim 6 camere duble superioare și 1 suite queen exclusivă. Camerele duble sunt spațioase și luminoase cu vedere la lac, TV satelit și baie privată. Suite-ul include dormitor și living separate, baie cu bidet și intrare privată. Toate camerele au WiFi gratuit, parcare gratuită și halate premium.",
+        a: "Oferim 6 camere duble superioare (32 m²) și 1 Suită cu 1 Dormitor exclusivă. Camerele duble sunt spațioase și luminoase, cu vedere la lac, TV satelit și baie privată cu cadă și duș. Suita include dormitor și sufragerie separate, baie privată și până la 4 oaspeți. Toate camerele au WiFi gratuit, parcare gratuită, halat și papuci.",
       },
       {
         q: "În ce interval se poate face check-in și check-out la Domeniul Poiana Ursului?",
-        a: "Check-in: de la 14:00 la 22:00. Check-out standard: de la 10:00 la 12:00. Pentru check-out întârziat (12:01–18:00), se aplică o taxă suplimentară de 20% din valoarea ultimei nopți. Cererile speciale pentru check-in/check-out sunt bine-venite și depind de disponibilitate.",
+        a: "Check-in: 14:00–23:00. Check-out standard: 11:00–12:00. Pentru check-out întârziat (12:01–18:00) se aplică o taxă suplimentară de 20% din valoarea ultimei nopți. Cererile speciale pentru check-in/check-out sunt bine-venite și depind de disponibilitate.",
       },
       {
         q: "Cât costă sejurul la Domeniul Poiana Ursului?",
-        a: "Camerele duble costă de la 240 RON/noapte (≈48€). Suite-ul premium costă de la 320 RON/noapte (≈64€). Micul dejun (35 RON/pers.) și serviciile spa sunt disponibile contra cost. Oferim reducere de 5% pentru sejururi de 5+ nopți. Copiii sub 5 ani sunt gratuit în patul părinților. Copiii 5–15 ani costă 45 RON/noapte cu pat suplimentar.",
+        a: "Camerele duble costă de la 240 RON/noapte (≈48 €). Suita cu 1 Dormitor costă de la 320 RON/noapte (≈64 €). Micul dejun (35 RON/persoană) și serviciile spa sunt disponibile contra cost. Oferim reducere de 5% pentru sejururi de 5+ nopți. Copiii sub 5 ani stau gratuit în patul părinților. Copiii 5–15 ani costă 45 RON/noapte cu pat suplimentar.",
       },
       {
         q: "Ce activități se pot desfășura la Domeniul Poiana Ursului?",
-        a: "Oaspeții se pot bucura de jacuzzi exterior cu apă caldă, saună tradițională, sesiuni de masaj profesional, pescuit la lacurile din apropiere, drumeții prin păduri, grătar și picnic în aer liber. Restaurantul nostru servește mâncare tradițională românească și internațională. De asemenea, puteți explora Sighișoara (18 km), Brașov și alte atracții din Carpați.",
+        a: "Oaspeții se pot bucura de jacuzzi exterior cu apă caldă, saună tradițională, sesiuni de masaj profesional, pescuit la lacurile din apropiere, drumeții prin păduri, grătar și picnic în aer liber. Restaurantul nostru servește mâncare tradițională românească și internațională. De asemenea, puteți explora Sighișoara (18 km), Biertan (16 km) și alte atracții din Transilvania.",
       },
       {
         q: "Cât de departe este Domeniul Poiana Ursului de centrul din Dumbrăveni?",
-        a: "Domeniul se află la aproximativ 30 de minute pe jos de centrul Dumbrăvenilor. Cu mașina, Sighișoara (cea mai apropiată atracție majoră) este la 18–20 km (≈25 de minute). Brașov este la 45 km, iar Sibiu la 35 km. Aeroportul Internațional Sibiu este la 81 km.",
+        a: "Domeniul se află la aproximativ 30 de minute pe jos de centrul Dumbrăvenilor. Cu mașina, Sighișoara (cea mai apropiată atracție majoră) este la 18–20 km (≈25 de minute). Mediaș este la 18 km, Biertan la 16 km, iar Salina Praid la 45 km. Aeroportul Internațional Sibiu este la ~80 km.",
       },
       {
         q: "Domeniul Poiana Ursului are cadă cu hidromasaj pentru oaspeți?",
-        a: "Da, oferim un jacuzzi (ciubăr) exterior cu apă caldă, disponibil pentru toți oaspeții noștri. Este ideală pentru relaxare sub cerul liber, înconjurate de natură. Combinația cu sauna noastră și serviciile de masaj creează experiența wellness completă. Bucurați-vă de o sesiune de relaxare după explorarea peisajelor Transilvaniei!",
+        a: "Da, oferim un jacuzzi (ciubăr) exterior cu apă caldă, disponibil pentru toți oaspeții noștri. Este ideal pentru relaxare sub cerul liber, înconjurați de natură. Combinația cu sauna noastră tradițională și serviciile de masaj creează experiența wellness completă. Bucurați-vă de o sesiune de relaxare după explorarea peisajelor Transilvaniei!",
       },
     ],
   },

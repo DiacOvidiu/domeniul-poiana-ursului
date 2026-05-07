@@ -163,14 +163,30 @@ export const en = {
     badge: "Have questions?",
     title: "Frequently Asked Questions",
     items: [
-      { q: "What are the check-in and check-out times?", a: "Check-in: 14:00–23:00. Standard check-out: 11:00–12:00. Late check-out (12:01–18:00) incurs an extra charge of 20% of the last night's value." },
-      { q: "How is payment made? Is card accepted?", a: "Payment is made in cash at the property. The booking deposit is refundable if you cancel at least 5 days before arrival." },
-      { q: "Are pets allowed?", a: "We're sorry, pets are not allowed on the property for the comfort of all our guests." },
-      { q: "What are the rates for children?", a: "Children under 5 stay free when using parents' bed. Children aged 5–15 pay 45 RON/night with an extra bed." },
-      { q: "Is breakfast included in the rate?", a: "Breakfast is not included but can be purchased for 35 RON/person. Lunch and dinner are available à la carte." },
-      { q: "How can I get there from Sighișoara?", a: "Approximately 18–20 km from Sighișoara, about 25 minutes by car. Address: Strada C. Dobrogeanu Gherea Nr. 130, Dumbrăveni, Sibiu." },
-      { q: "What wellness facilities are available?", a: "The property has a jacuzzi (hot tub), sauna and massage salon. We recommend booking massage sessions in advance at reception." },
-      { q: "Are there discounts for longer stays?", a: "Yes, we offer a 5% discount for stays of 5 nights or more. Contact us directly for group offers." },
+      {
+        q: "What rooms can I book at Domeniul Poiana Ursului?",
+        a: "We offer 6 superior double rooms (32 m²) and 1 exclusive One-Bedroom Suite. Double rooms are spacious and bright, with lake view, satellite TV and private bathroom with bathtub and shower. The suite includes a separate bedroom and living room, private bathroom and accommodates up to 4 guests. All rooms come with free WiFi, free parking, bathrobe and slippers.",
+      },
+      {
+        q: "What are the check-in and check-out hours at Domeniul Poiana Ursului?",
+        a: "Check-in: 14:00–23:00. Standard check-out: 11:00–12:00. Late check-out (12:01–18:00) incurs an extra charge of 20% of the last night's value. Special check-in/check-out requests are welcome and subject to availability.",
+      },
+      {
+        q: "How much does a stay at Domeniul Poiana Ursului cost?",
+        a: "Double rooms start from 240 RON/night (≈€48). The One-Bedroom Suite starts from 320 RON/night (≈€64). Breakfast (35 RON/person) and spa services are available for an extra fee. We offer a 5% discount for stays of 5+ nights. Children under 5 stay free in their parents' bed. Children aged 5–15 pay 45 RON/night with an extra bed.",
+      },
+      {
+        q: "What activities are available at Domeniul Poiana Ursului?",
+        a: "Guests can enjoy the outdoor jacuzzi with hot water, traditional sauna, professional massage sessions, fishing at nearby lakes, forest hikes, BBQ and outdoor picnics. Our restaurant serves traditional Romanian and international cuisine. You can also explore Sighișoara (18 km), Biertan (16 km) and other Transylvanian attractions.",
+      },
+      {
+        q: "How far is Domeniul Poiana Ursului from the centre of Dumbrăveni?",
+        a: "The property is about a 30-minute walk from the centre of Dumbrăveni. By car, Sighișoara (the closest major attraction) is 18–20 km away (~25 minutes). Mediaș is 18 km, Biertan 16 km, and Praid Salt Mine 45 km. Sibiu International Airport is ~80 km.",
+      },
+      {
+        q: "Does Domeniul Poiana Ursului have a hot tub for guests?",
+        a: "Yes, we offer an outdoor jacuzzi (hot tub) with warm water, available for all our guests. It's ideal for relaxation under the open sky, surrounded by nature. Combined with our traditional sauna and massage services, it creates a complete wellness experience. Treat yourself to a relaxing session after exploring the Transylvanian landscape!",
+      },
     ],
   },
   contact: {
