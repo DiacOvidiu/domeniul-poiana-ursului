@@ -46,7 +46,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-[100svh] flex flex-col justify-end sm:justify-center overflow-hidden"
+      className="relative min-h-[85svh] sm:min-h-screen flex flex-col justify-end sm:justify-center overflow-hidden"
       aria-label="Hero - Domeniul Poiana Ursului"
       data-testid="hero-section"
     >
@@ -130,7 +130,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 animate-fade-in delay-1000"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden sm:flex flex-col items-center gap-2 animate-fade-in delay-1000"
         data-testid="hero-scroll-indicator"
       >
         <span className="text-xs text-muted-foreground tracking-widest uppercase">{t.hero.scroll}</span>
